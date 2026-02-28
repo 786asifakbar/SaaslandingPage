@@ -4,6 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  @apply bg-slate-950 text-white;
+  @apply bg-darkBg text-white transition-colors duration-300;
+}
+
+.light body {
+  @apply bg-lightBg text-slate-900;
 }
