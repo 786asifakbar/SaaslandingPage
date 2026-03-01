@@ -1,5 +1,4 @@
 @import "tailwindcss";
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,10 +7,12 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  @apply bg-darkBg text-white transition-colors duration-300;
-}
+/* body {
+     @apply bg-dark-900 text-white transition-colors duration-300;
+};
 
 .light body {
-  @apply bg-lightBg text-slate-900;
-}
+
+  @apply bg-light-100 text-slate-900;
+
+} */
