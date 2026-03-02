@@ -8,18 +8,19 @@ import Pricing from "../components/Pricing"
 import BlogSection from "../components/BlogSection"
 import Footer from "../components/Footer"
 import Stats from "../components/Stats"
-
+import Testimonials from "../components/Testimonials"
 const Home = () => {
   return (
     <>
     <Navbar />
       <Hero />
       <DashboardPreview />
-       <Features />
+      <Features />
       <Integrations />
       <Pricing />
       <BlogSection />
       <Stats />
+      <Testimonials />
       <Footer />
     </>
   )
