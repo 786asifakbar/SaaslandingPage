@@ -21,7 +21,7 @@ const plans = [
 
 const Pricing = () => {
   return (
-    <section className="py-24 px-6 bg-slate-950">
+    <section id="pricing" className="py-24 px-6 bg-slate-950">
       <div className="max-w-7xl mx-auto text-center">
 
         <h2 className="text-3xl md:text-5xl font-bold text-white">

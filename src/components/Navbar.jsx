@@ -37,13 +37,18 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8 text-gray-300 font-medium">
-            {["Features", "Solutions", "Pricing", "Resources"].map((item) => (
+            {[
+              { name: "Features", link: "#features" },
+              { name: "Solutions", link: "#dashboard" },
+              { name: "Pricing", link: "#pricing" },
+              { name: "Resources", link: "#blog" },
+            ].map((item) => (
               <a
-                key={item}
-                href="#"
+                key={item.name}
+                href={item.link}
                 className="relative hover:text-white transition duration-300 group"
               >
-                {item}
+                {item.name}
                 <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-gradient-to-r from-indigo-400 to-purple-500 transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
@@ -78,14 +83,19 @@ const Navbar = () => {
             exit={{ opacity: 0 }}
             className="fixed inset-0 bg-slate-950/80 backdrop-blur-xl z-40 flex flex-col items-center justify-center gap-8 text-xl text-white"
           >
-            {["Features", "Solutions", "Pricing", "Resources"].map((item) => (
+            {[
+              { name: "Features", link: "#features" },
+              { name: "Solutions", link: "#dashboard" },
+              { name: "Pricing", link: "#pricing" },
+              { name: "Resources", link: "#blog" },
+            ].map((item) => (
               <a
-                key={item}
-                href="#"
+                key={item.name}
+                href={item.link}
                 onClick={() => setMobileOpen(false)}
                 className="hover:text-indigo-400 transition"
               >
-                {item}
+                {item.name}
               </a>
             ))}
 
