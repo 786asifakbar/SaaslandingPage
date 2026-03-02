@@ -5,6 +5,7 @@ import DashboardPreview from "../components/DashboardPreview"
 import Integrations from "../components/Integrations"
 import Pricing from "../components/Pricing"
 import BlogSection from "../components/BlogSection"
+import Footer from "../components/Footer"
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Integrations />
       <Pricing />
       <BlogSection />
+      <Footer />
     </>
   )
 }
