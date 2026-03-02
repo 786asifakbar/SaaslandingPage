@@ -62,7 +62,7 @@ const Hero = () => {
           </div>
         </motion.div>
 
-        {/* Right Mockup */}
+        {/* Right Mockup with Image */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -72,8 +72,12 @@ const Hero = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-indigo-500/20 to-purple-600/20 blur-3xl rounded-3xl"></div>
 
           <div className="relative backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl shadow-2xl p-6 hover:scale-[1.02] transition duration-500">
-            <div className="h-80 bg-slate-900 rounded-2xl flex items-center justify-center text-gray-500">
-              Dashboard Preview
+            <div className="h-80 rounded-2xl overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1400&q=80"
+                alt="SaaS Dashboard Preview"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </motion.div>
